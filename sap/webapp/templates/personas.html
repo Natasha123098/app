@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas de Administracion de Personas</title>
+</head>
+<body>
+<h1>Sistemas de Administracion de Personas</h1>
+<p>Cantidad de Personas: {{cantidad}}</p>
+
+
+<!-- forma sencilla de hacer que aparezca la lista solo con los nombres-->
+{% for persona in personas %}
+    <p>{{persona.nombre}} {{persona.nombre}} {{persona.email}}</p>
+{% endfor %}
+
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- forma larga de hacer que aparezca la lista solo con los nombres-->
+{% for nombre in nombres_personas %}
+    <p>{{nombre}}</p>
+{% endfor %}
+
+</body>
+</html>
